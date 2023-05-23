@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> País de Origem </title>
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
+            color: white;
+            text-shadow: 1px 1px grey;
+            text-align: center;
+        }
+
+        input[type=text] {
+            font-size: 1.3em;
+            height: 50px;
+        }
+
+        input[type=button] {
+            margin: 20px;
+            width: 200px;
+            font-size: 1em;
+        }
+        
+        #resultado {
+            color: white;
+            font-size: 1.3em;
+            text-shadow: 1px 1px grey;
+        }
+    </style>
+</head>
+<body>
+    <h1> País de Origem </h1>
+
+    <input type="text" name="txt" id="txt" placeholder="Digite seu país de Origem"> <br>
+
+    <input type="button" value="Analisar" onclick="analise()">
+
+    <div id="resultado">
+        
+    </div>
+
+    <script>
+        var txt = document.querySelector('input#txt')
+
+        function analise() {
+            var etnia = (txt.value)
+
+            if ( etnia == 'Brasil' ) {
+                resultado.innerHTML = `Seu país de origem é ${etnia}. Então você é brasileiro.`
+            } else {
+                resultado.innerHTML = `Seu país de origem é ${etnia}. Então você é estrangeiro.`
+            }
+        }
+    </script>
+</body>
+</html>
