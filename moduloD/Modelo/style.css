@@ -12,6 +12,7 @@ header {
     color: white;
     text-align: center;
     text-shadow: 1px 1px grey;
+    margin: 20px 0;
 }
 
 section {
@@ -32,4 +33,12 @@ footer {
     text-shadow: 1px 1px grey;
 }
 
+img {
+    width: 400px;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
 
