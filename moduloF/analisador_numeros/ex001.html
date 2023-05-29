@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Relógio </title>
+    <title> Analisador </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1> Hora do Dia </h1>
+        <h1> Analisador de Número </h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem...
+        <div>
+            Número ( entre 1 a 100 ) : 
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()"> <br>
+            <select name="flista" id="flista" size="6"></select> <br>
+            <input type="button" value="Finalizar" onclick="finalizar()">
+
+
         </div>
 
-        <div id="foto">   
-            <img id="imagem" src="manha.png" alt="Foto Manhã">
+        <div id="res">   
+            
         </div>
     </section>
 

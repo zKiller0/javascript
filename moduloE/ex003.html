@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Relógio </title>
+    <title> Super Contador </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1> Hora do Dia </h1>
+        <h1> Contador </h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem...
+        <div id="dados">
+            <p> Início : <input type="number" name="inicio" id="txti"> </p>
+            <p> Fim : <input type="number" name="fim" id="txtf"> </p>
+            <p> Passos : <input type="number" name="passos" id="txtp"> </p>
+            <p> <input type="button" value="Contar" onclick="contar()"> </p>
         </div>
 
-        <div id="foto">   
-            <img id="imagem" src="manha.png" alt="Foto Manhã">
+        <div id="res">   
+            Preparando a contagem
         </div>
     </section>
 
